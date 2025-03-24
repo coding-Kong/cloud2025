@@ -1,21 +1,20 @@
-package com.atguigu.cloud.entities;
+package com.atguigu.cloud.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * @author kdz
- * @create 2025-03-22-20:48
+ * @create 2025-03-23-10:09
  */
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PayDTO implements Serializable {
+public class PayDTO {
 
     private Integer id;
     //支付流水号
