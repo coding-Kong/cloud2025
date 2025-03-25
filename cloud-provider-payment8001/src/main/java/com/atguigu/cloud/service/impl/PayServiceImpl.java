@@ -26,21 +26,21 @@ public class PayServiceImpl implements PayService {
 
     @Override
     public int delete(Integer id) {
-        return 0;
+        return payMapper.deleteByPrimaryKey(id);
     }
 
     @Override
     public int update(Pay pay) {
-        return 0;
+        return payMapper.updateByPrimaryKeySelective(pay);
     }
 
     @Override
     public Pay getById(Integer id) {
-        return null;
+        return payMapper.selectByPrimaryKey(id);
     }
 
     @Override
     public List<Pay> getAll() {
-        return null;
+        return payMapper.selectAll();
     }
 }
