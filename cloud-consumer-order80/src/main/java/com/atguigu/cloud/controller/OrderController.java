@@ -45,4 +45,9 @@ public class OrderController {
         return restTemplate.getForObject(PaymentSrv_URL+"/pay/getAll",ResultData.class);
     }
 
+    @GetMapping(value = "/consumer/getInfoByConsul")
+    private String getInfoByConsul()
+    {
+        return restTemplate.getForObject(PaymentSrv_URL + "/getInfoByConsul", String.class);
+    }
 }
